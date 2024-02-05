@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.green {
+    @apply bg-green-300 !w-6/12;
+    
+}
+
+.darkgreen {
+    @apply bg-green-950 w-4/12;
+}
+.blue {
+    @apply bg-green-300 !w-6/12;
+}
+
+.darkblue {
+    @apply bg-green-950 w-4/12;
+}
+.red {
+    @apply bg-red-300 !w-6/12;
+}
+
+.darkred {
+    @apply bg-red-950 w-4/12;
+}
+
+.btns {
+    @apply relative;
+}
+
+.btns button {
+    @apply relative w-auto p-1;
+}
+
+
+.friendInfo {
+    @apply flex flex-col items-center;
+}
+
+.all {
+    @apply flex justify-between items-center;
+}

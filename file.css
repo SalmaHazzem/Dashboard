@@ -1,0 +1,668 @@
+body {
+    box-sizing: border-box;
+    padding: 0;
+    display: grid;
+    grid-template-areas: 
+    ' aside  header header header'
+    ' aside  main main main'
+    ;
+    background-color: #eee;
+}
+
+html {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+input {
+    background-color: rgb(231 231 231);
+    padding: 3px;
+    width: 90%;
+    border-radius: 10px;
+    margin-bottom: 4px;
+font-size: 0.6rem;
+}
+
+textarea {
+    display: block;
+    width: 90%;
+    height: 100px;
+    background-color: gainsboro;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    padding: 4px;
+}
+
+svg {
+    width: 20px !important;
+    margin-right: 7px;
+}
+
+img {
+    width: 30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+
+.first {
+font-size: 1.5rem;
+}
+
+button {
+    background-color: blue;
+    border-radius: 10px;
+    width: 15%;
+    font-size: 0.8rem;
+    color: white;
+    position:absolute;
+    right: 0;
+    margin-top: 17px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: white;
+    padding: 20px;
+    font-size: 0.7rem;
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+    padding: 12px;
+}
+
+main {
+    grid-area: main;
+}
+
+/* inside the aside */
+
+.line {
+    width: 25%;
+    background-color: black;
+    height: 3px;
+}
+
+.part {
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.circle {
+    background-color: black;
+    border-radius: 50%;
+    width: 10%;
+    height: 11px;
+}
+
+.pages {
+    margin-top: 30px;
+}
+
+
+/* inside the header */
+
+header input {
+    width: 15%;
+    border-radius: 10px;
+}
+
+/* inside first section */
+section:first-of-type {
+    height: 66px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+section:first-of-type h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.colored {
+    background-image: linear-gradient(to right,black 0 50%,white 50% 100%);
+    width: 10%;
+    height: 3px;
+}
+
+/* inside second section */
+
+section:nth-of-type(2) {
+    margin-top: 30px;
+}
+
+
+.grayp,.time {
+    color:gray;
+    font-size: 0.6rem;
+}
+
+.first {
+    margin-bottom: 30px;
+}
+
+.shared {
+    background-color: white;
+    width: 45%;
+    margin-bottom: 10px; 
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.welcomeSec,.quick {
+    padding-bottom: 80px;
+}
+
+.profilePic {
+    position: relative;
+    top: -25px;
+    border: 3px solid #cec0c0;
+    border-radius: 50%;
+    width: 10%;   
+}
+.pp {
+    height: 46%;
+    background-color: gainsboro;
+}
+
+.basic {
+    border: 1px gainsboro solid;
+    border-right: none;
+    border-left: none;
+    padding: 10px;
+}
+
+.money {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.tic {
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    margin: 10px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tic:nth-of-type(2) svg {
+    color:green;
+}
+.tic:nth-of-type(3) svg {
+    color:maroon;
+}
+.tic:nth-of-type(4) svg {
+    color:blue;
+}
+.tic:nth-of-type(5) svg {
+    color:red;
+}
+
+
+
+
+.last,.lastNew,.part{
+    display: flex;
+}
+
+.topItems div,.task,.reacts,.media div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightDiv {
+    width: 100%;
+}
+
+.radio {
+    width: 100%;
+    height: 6px;
+    border-radius: 10px;
+}
+
+.hh {
+    height: 6px;
+    border-radius: 10px;
+}
+
+.yearlyTarget  .radio::after {
+    content: "80%";
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    position: relative;
+    padding: 5px;
+    font-size: 0.6rem;
+    left: 77%;
+    top: -43px;
+}
+
+.afterYellow::after{
+    content: "27%" !important;
+    background-color: #979731 !important;
+    left: 27% !important;
+    top: -43px !important;
+}
+.afterGreen::after{
+    content: "45%" !important;
+    background-color: green !important;
+    left: 46% !important;
+    top: -43px !important;
+}
+
+.lastNew {
+    justify-content: space-between;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+.period{
+    background-color: gainsboro;
+    height: 36%;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.last {
+    margin-bottom: 5px;
+}
+
+.last img {
+    width: 25%;
+    border-radius: 10px;
+    margin-right: 3px;
+}
+
+.task {
+    font-size: 0.8rem;
+    border-bottom: 1px solid gainsboro;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    align-items: center;
+}
+
+.task svg {
+    width: 20px;
+}
+
+.topItems {
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.file {
+    width:8% !important;
+}
+
+.pro p:first-child {
+    font-size: 0.8rem;
+}
+
+.userPost {
+    font-size: 0.6rem;
+    border-bottom: 1px solid gainsboro;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.media {
+    display: flex;
+    position: relative;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+}
+
+ .pro {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.progressCircle {
+background-color: white;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+border: 1px blue solid;
+}
+
+.activeProcess {
+    background-color: blue;
+}
+
+ .progressline {
+    background-color: blue;
+    width: 2px;
+    height: 36px;
+}
+
+.proTbl {
+    height: fit-content;
+    width: 90%;
+}
+
+table ,th,td {
+    border: 1px gainsboro solid;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 25px;
+}
+
+th {
+    background-color: gray;
+}
+
+td:last-child p {
+    background-color: green;
+    padding: 5px;
+    border-radius: 10px;
+    height: 30px;
+    color: white;
+}
+
+td div {
+    display: flex;
+}
+td div img{
+    border-radius: 50%;
+    
+}
+
+/* setting page style */
+
+.choises div {
+display: flex;
+}
+
+.widgets input ,.choises input{
+    width: auto;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+form input {
+    border: 1px solid gainsboro;
+    background-color: transparent;
+    margin: 3px;
+}
+
+form button {
+    background-color: transparent;
+    color: blue;
+}
+
+.profileinfo {
+    width: 90%;
+}
+
+.profileinfo svg {
+    width: 20px;
+    color: rgb(117, 117, 19);
+}
+
+.checkBtn {
+    width: 13%;
+    background-color: blue;
+    height: 24px;
+    border-radius: 17px;
+    position: relative;
+}
+
+.checkBtn div {
+    height: 15px;
+    width: 36%;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+}
+
+.someInfo {
+    border-bottom:1px gainsboro solid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.8rem;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    gap: 4px;
+
+}
+
+.closed {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.skills {
+    display: flex;
+    border-bottom:1px gainsboro solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.activity img {
+    width: 10%;
+}
+
+
+
+.imges {
+    display: flex;
+}
+
+.teamMem {
+    border-radius: 50%;
+}
+
+.opts {
+    display: flex;
+    justify-content: flex-end;
+    gap:3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    padding: 10px 0 10px 0;
+}
+
+.financial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* //course page style */
+
+.friend {
+    font-size: 0.6rem;
+}
+.big {
+    position: relative;
+}
+
+.course .profilePic {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.courseImge {
+   width: 100%;
+}
+
+.courseInfo {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px gainsboro solid;
+    padding-top: 10px;
+}
+
+.courseInfo div {
+    display: flex;
+    align-items: center;
+}
+
+.courseInfo svg {
+    width: 20px;
+    color: gray;
+}
+
+.centered {
+    font-size: 0.6rem;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+    top: -21px;
+}
+
+.someInfo div {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+
+.btns button:nth-of-type(2){
+    background-color: red;
+}
+
+/* file page style */
+
+.down {
+    width: 21%;
+}
+
+.down div:first-of-type {
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.8rem;
+
+}
+
+.fileStatitics {
+    height: 40%;
+}
+
+.fileStatitics .last {
+    border: 1px gainsboro solid;
+    padding: 7px;
+    border-radius: 10px;
+    margin-top: 17px;
+}
+
+.fileStatitics button {
+    position:relative;
+    width: 45%;
+}
+
+/* plans */
+.greensvg {
+    color: green;
+}
+
+.redsvg {
+    color: red;
+}
+
+.features .task div {
+    display: flex;
+    font-size: 0.7rem;
+}
+
+.planeType {
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.free {
+    background-color: green;
+}
+
+.basicplan{
+    background-color: blue;
+}
+
+.premuim {
+    background-color: orange;
+}
+.planeType div {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:600px) {
+
+    html {
+        font-size: 25px;
+    }
+
+    body {
+        display: block;
+    }
+
+    header input {
+        width: 90%;
+    }
+
+    .proTbl {
+        overflow: scroll;
+    }
+
+    .pages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    section {
+        flex-direction: column;
+    }
+
+    .shared {
+        width: 100%;
+    }
+    
+    .basic,.closed,.rightDiv,.last,.tickets,.profileinfo,td div {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profilePic {
+        left: 40%;
+    }
+
+    .someInfo .checkBtn {
+        width: 30%;
+    }
+
+
+}
